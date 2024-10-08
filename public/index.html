@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Ensure the navbar brand is visible */
+        .navbar-brand {
+            font-size: 1.7rem;
+            font-weight: bolder;
+            color: #1b81e7;
+            text-align: center;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .navbar-brand:hover {
+            color: #007bff;
+        }
+      #contact {
+        background-color: rgb(118, 207, 248);
+        border-radius: 5%;
+        border: 100px;
+      }
+
+        /* Custom CSS for resizing the carousel images */
+        .carousel-item img {
+            width: 100%;   /* Make the image take up the full width of its container */
+            height: auto;  /* Maintain the aspect ratio */
+            max-height: 800px; /* Set a max-height for images to prevent them from being too tall */
+            object-fit: contain; /* Ensures the image scales correctly without stretching */
+        }
+        @media (max-width: 768px) {
+    .carousel-item img {
+        max-height: 300px; /* Smaller height for mobile */
+    }
+}                
+            #call-to-action img {
+              width: 100%;   /* Make the image take up the full width of its container */
+            height: 500px;  /* Maintain the aspect ratio */
+            max-height: 800px; /* Set a max-height for images to prevent them from being too tall */
+            object-fit: contain; /* Ensures the image scales correctly without stretching */
+            }
+
+            @media (max-width: 768px) {
+    .cll-to-action img {
+        max-height: 300px; /* Smaller height for mobile */
+    }
+  }
+  /* Footer styling */
+  footer {
+            background-color: #343a40; /* Dark background */
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+
+        /* Social media icons styling */
+        footer a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        /* Hover effect for icons */
+        footer a:hover {
+            color: #007bff; /* Change icon color on hover */
+        }
+
+        /* Make icons larger on larger screens */
+        @media (min-width: 768px) {
+            footer a {
+                font-size: 2rem;
+            }
+        }
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar (Header) -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">CAMPUSE APP<br> Your Campus Companion.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<h3 style="background-color:rgb(118, 207, 248);text-align: center; color: rgb(250, 249, 248); border-radius: 6%;">Simplify your student life with Campuse</h3>
+
+
+<!-- Hero Section with Carousel -->
+<div id="schoolCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images\IMG-20240919-WA0014.jpg" class="d-block w-100" alt="School Image 1" onerror="this.src='https://via.placeholder.com/800x400';">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+      <h5 style="color: black; text-align: center;">Welcome Campuse!</h5>
+        <p style="color: black; text-align: center;">Your Everyday companion </p>
+    </div>
+    <div class="carousel-item">
+      <img src="images\IMG-20240919-WA0004.jpg" class="d-block w-100" alt="School Image 2" onerror="this.src='https://via.placeholder.com/800x400';">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+      <h5 style="color: black; text-align: center;">The Campuse Profile!</h5>
+        <p style="color: black; text-align: center">Stay Organized, informed, and connected with fellow students, all in one place.</p>
+    </div>
+    <div class="carousel-item">
+      <img src="images\IMG-20240919-WA0009.jpg" class="d-block w-100" alt="School Image 3" onerror="this.src='https://via.placeholder.com/800x400';">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+      <h5 style="color: black; text-align: center;">Discover!</h5>
+        <p style="color: black; text-align: center;">Explore Campus Events, News, and Opportunities .</p>
+    </div>
+    <div class="carousel-item">
+      <img src=images\IMG-20240919-WA0008.jpg" class="d-block w-100" alt="School Image 3" onerror="this.src='https://via.placeholder.com/800x400';">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+      <h5 style="color: black; text-align: center;">Connect!</h5>
+        <p style="color: black; text-align: center;">Join grous, Chat with students across various institutions in Nigeria, and make new friends.</p>
+    </div>
+    <div class="carousel-item">
+      <img src="images\IMG-20240919-WA0005.jpg" class="d-block w-100" alt="School Image 3" onerror="this.src='https://via.placeholder.com/800x400';">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+      <h5 style="color: black; text-align: center;">Hostel Hub!</h5>
+        <p style="color: black; text-align: center;">Find and rent hostel rooms with ease.</p>
+    </div>
+    <div class="carousel-item">
+      <img src="images\IMG-20240919-WA0010.jpg" class="d-block w-100" alt="School Image 3" onerror="this.src='https://via.placeholder.com/800x400';">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+      <h5 style="color: black; text-align: center;">Campuse Library!</h5>
+        <p style="color: black; text-align: center;">Access thousand of e-books and study resources.</p>
+    </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#schoolCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#schoolCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- About Us Section -->
+<section id="about" class="container py-5">
+  <h2>About Campuse App</h2>
+  <p>Campuse app is a premier digital innovation focused on the holistic development of students and campus life. <br>It provides an environment  for student and indeed anyone to stay organized and updated with the jostling campus activities</p>
+</section>
+
+<!-- Contact Form -->
+<section id="contact" class="container py-5">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <div class="mb-3">
+      <label for="name" class="form-label">Full Name</label>
+      <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</section>
+
+<section id="call-to-action" class="container py-5">
+  <img src="C:\Users\user\Landing page2\public\images\IMG-20240919-WA0013.jpg" class="d-block w-100" alt="School Image 3" onerror="this.src='https://via.placeholder.com/800x400';">
+ <br>
+  <h3> Get Started with Campuse Today!</h3>
+  <p>Download the app and experience the ultimate campus companion.</p>
+  <a href="https://chat.whatsapp.com/HI7gnZCLR45Ao9Yh4EzekF" class="btn btn-primary">Join the wait-list now</a>
+</section>
+
+<footer>
+  <p>Connect with us:</p>
+  <!-- Email Icon -->
+  <a href="mailto:haissem252@gmail.com" aria-label="Email">
+    <i class="fas fa-envelope"></i>
+  </a>
+  
+  <!-- Facebook Icon -->
+  <a href="https://bit.ly/3XNhKCQ" aria-label="Facebook" target="_blank">
+      <i class="fab fa-facebook-f"></i>
+  </a>
+  <!-- Instagram Icon -->
+  <a href="https://bit.ly/3Zup1J4" aria-label="Instagram" target="_blank">
+      <i class="fab fa-instagram"></i>
+  </a>
+  <!-- X (Twitter) Icon -->
+  <a href="https://bit.ly/3MOBxvp" aria-label="X (Twitter)" target="_blank">
+    <i class="fab fa-twitter"></i>
+
+  </a>
+  <p>&copy; 2024 CampuseApp. All rights reserved.</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById("contactForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      body: JSON.stringify(Object.fromEntries(formData.entries())),
+      headers: { 'Content-Type': 'application/json' }
+    });
+    if (response.ok) {
+      alert("Message Sent!");
+      e.target.reset();
+    } else {
+      alert("Error sending message");
+    }
+  });
+</script>
+
+</body>
+</html>
+
+
